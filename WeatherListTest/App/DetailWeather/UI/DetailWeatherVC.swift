@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailWeatherVC.swift
 //  WeatherListTest
 //
 //  Created by TRAING Serey on 05/07/2019.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DetailWeatherVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
-
-
 }
-
