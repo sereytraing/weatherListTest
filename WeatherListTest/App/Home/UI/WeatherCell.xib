@@ -19,7 +19,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQg-aU-AD7">
-                        <rect key="frame" x="10" y="46.5" width="394" height="21"/>
+                        <rect key="frame" x="10" y="18" width="394" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr2-yi-AFl">
+                        <rect key="frame" x="10" y="74.5" width="394" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -27,12 +33,16 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="XQg-aU-AD7" secondAttribute="trailing" constant="10" id="K8G-fd-eW5"/>
+                    <constraint firstAttribute="trailing" secondItem="gr2-yi-AFl" secondAttribute="trailing" constant="10" id="KsY-w4-FrK"/>
                     <constraint firstItem="XQg-aU-AD7" firstAttribute="leading" secondItem="xOO-B8-tr5" secondAttribute="leading" constant="10" id="Lj7-Ij-a1m"/>
-                    <constraint firstItem="XQg-aU-AD7" firstAttribute="centerY" secondItem="xOO-B8-tr5" secondAttribute="centerY" id="cx2-tY-UKr"/>
+                    <constraint firstItem="gr2-yi-AFl" firstAttribute="centerY" secondItem="xOO-B8-tr5" secondAttribute="centerY" multiplier="1.5" id="cCY-Y0-qyK"/>
+                    <constraint firstItem="XQg-aU-AD7" firstAttribute="centerY" secondItem="xOO-B8-tr5" secondAttribute="centerY" multiplier="0.5" id="cx2-tY-UKr"/>
+                    <constraint firstItem="gr2-yi-AFl" firstAttribute="leading" secondItem="xOO-B8-tr5" secondAttribute="leading" constant="10" id="qwi-ID-Rq0"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="dateLabel" destination="XQg-aU-AD7" id="glk-nl-bg2"/>
+                <outlet property="temperatureLabel" destination="gr2-yi-AFl" id="8At-l3-JDF"/>
             </connections>
             <point key="canvasLocation" x="111.59420289855073" y="94.419642857142847"/>
         </tableViewCell>

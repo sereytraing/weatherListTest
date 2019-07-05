@@ -20,8 +20,11 @@ class HomeVC: BaseVC {
     }
     
     func setupBinding() {
-        
         self.tableView.register(UINib(nibName: "WeatherCell", bundle: nil), forCellReuseIdentifier: "WeatherCell")
+        
+        self.tableView.rx
+            .setDelegate(self)
+            .disposed(by: self.viewModel.disposeBag)
         
         self.viewModel.weathers.asObservable().bind(to: self.tableView.rx.items(cellIdentifier: "WeatherCell")) { row, model, cell in
                 if let weatherCell = cell as? WeatherCell {
@@ -41,26 +44,20 @@ class HomeVC: BaseVC {
             .asObservable()
             .map({ [unowned self] responseCase in
                 switch responseCase {
-                case .Success:
-                    //self.setupTableView()
-                    break
                 case .Error:
                     UIAlertController.okAlert(controller: self, title: "Erreur", message: "Une erreur est survenue")
                     break
-                case .NoState, .NoContent:
+                case .Success, .NoState, .NoContent:
                     break
                 }
             })
             .subscribe()
             .disposed(by: self.viewModel.disposeBag)
     }
-    
-    /*func setupTableView() {
-        self.viewModel.weathers.asObservable().bind(to: self.tableView.rx.items(cellIdentifier: "WeatherCell")) { row, model, cell in
-            if let weatherCell = cell as? WeatherCell {
-                weatherCell.setupData(date: "eeee")
-            }
-        }
-        .disposed(by: self.viewModel.disposeBag)
-    }*/
+}
+
+extension HomeVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 }
