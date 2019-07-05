@@ -32,9 +32,9 @@ public final class WeatherRepository {
     func getWeatherRealm() -> Observable<ServiceResponseRealm> {
         return self.network.getWeather()
             .map({ serviceResponse -> ServiceResponseRealm in
-                let realm = try! Realm()
                 let realmObject = ServiceResponseRealm(response: serviceResponse)
                 DispatchQueue.main.async {
+                    let realm = try! Realm()
                     try! realm.write {
                         realm.add(realmObject, update: true)
                     }

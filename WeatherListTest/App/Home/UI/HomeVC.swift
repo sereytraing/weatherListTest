@@ -6,7 +6,7 @@
 //  Copyright © 2019 Sereypich TRAING. All rights reserved.
 //
 
-import UIKit
+import RxSwift
 
 class HomeVC: BaseVC {
 
@@ -26,7 +26,10 @@ class HomeVC: BaseVC {
             .setDelegate(self)
             .disposed(by: self.viewModel.disposeBag)
         
-        self.viewModel.weathersRealm.asObservable().bind(to: self.tableView.rx.items(cellIdentifier: "WeatherCell")) { row, model, cell in
+        self.viewModel.weathersRealm
+            .asObservable()
+            .observeOn(MainScheduler.instance)
+            .bind(to: self.tableView.rx.items(cellIdentifier: "WeatherCell")) { row, model, cell in
                 if let weatherCell = cell as? WeatherCell {
                     weatherCell.setupData(weather: model)
                 }

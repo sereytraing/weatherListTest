@@ -26,9 +26,10 @@ class WeatherRealm: Object {
     
     @objc dynamic var date: String = ""
     @objc dynamic var hour: String = ""
+    @objc dynamic var dateHour: String = ""
     
     override static func primaryKey() -> String? {
-        return "id"
+        return "dateHour"
     }
     
     convenience init(weather: Weather) {
@@ -48,5 +49,6 @@ class WeatherRealm: Object {
         self.nebulosite = NebulositeRealm(nebulosite: weather.nebulosite)
         self.date = weather.date ?? ""
         self.hour = weather.hour ?? ""
+        self.dateHour = date + hour
     }
 }
