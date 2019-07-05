@@ -49,6 +49,6 @@ class WeatherRealm: Object {
         self.nebulosite = NebulositeRealm(nebulosite: weather.nebulosite)
         self.date = weather.date ?? ""
         self.hour = weather.hour ?? ""
-        self.dateHour = date + hour
+        self.dateHour = date + " " + hour
     }
 }

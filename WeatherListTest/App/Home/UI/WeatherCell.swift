@@ -18,18 +18,15 @@ class WeatherCell: UITableViewCell {
     
     func setupData(weather: Weather) {
         self.dateLabel.text = (weather.date ?? "") + " " + (weather.hour ?? "")
-        self.temperatureLabel.text = "\(self.convertKelvinToCelsius(value: weather.temperature?.twoM))°C"
+        if let temperature = weather.temperature?.twoM {
+            self.temperatureLabel.text = "\(temperature.convertKelvinToCelsius())°C"
+        }
     }
     
     func setupData(weather: WeatherRealm) {
         self.dateLabel.text = weather.date + " " + weather.hour
-        self.temperatureLabel.text = "\(self.convertKelvinToCelsius(value: weather.temperature?.twoM))°C"
-    }
-    
-    func convertKelvinToCelsius(value: Double?) -> Int {
-        if let value = value {
-            return Int(value - 273.15)
+        if let temperature = weather.temperature?.twoM {
+             self.temperatureLabel.text = "\(temperature.convertKelvinToCelsius())°C"
         }
-        return 0
     }
 }

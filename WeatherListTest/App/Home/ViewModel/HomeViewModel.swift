@@ -19,7 +19,7 @@ enum BaseResponseCase {
 class HomeViewModel: BaseViewModel {
     
     //var weathers                = BehaviorRelay<[Weather]>(value: [])
-    var weathersRealm                = BehaviorRelay<[WeatherRealm]>(value: [])
+    var weathersRealm           = BehaviorRelay<[WeatherRealm]>(value: [])
     var weatherResponseCase     = BehaviorRelay<BaseResponseCase>(value: .NoState)
     var domain                  : HomeDomain
     let disposeBag              = DisposeBag()
@@ -34,7 +34,30 @@ class HomeViewModel: BaseViewModel {
         self.loaderIsHidden.accept(false)
         //If there is Cache URL
         //self.domain.getWeather()
+        
+        //With Realm
         self.domain.getWeatherRealm()
+            .observeOn(MainScheduler.instance)
+            .asSingle()
+            .map({ weathers in
+                if weathers.isEmpty {
+                    self.weatherResponseCase.accept(.NoContent)
+                } else {
+                    self.weathersRealm.accept(weathers)
+                    self.weatherResponseCase.accept(.Success)
+                }
+            })
+            .subscribe(
+                onError: { e in
+                    self.loaderIsHidden.accept(true)
+                    self.weatherResponseCase.accept(.Error)
+            })
+            .disposed(by: self.disposeBag)
+    }
+    
+    func forceGetWeather() {
+        self.weatherResponseCase.accept(.NoState)
+        self.domain.forceGetWeatherRealm()
             .observeOn(MainScheduler.instance)
             .asSingle()
             .map({ weathers in

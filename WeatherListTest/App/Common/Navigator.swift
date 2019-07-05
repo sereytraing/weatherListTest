@@ -21,6 +21,7 @@ struct Navigator {
         let storyboard = UIStoryboard(name: "DetailWeather", bundle: nil)
         if let controller = storyboard.instantiateViewController(withIdentifier: "DetailWeatherVC") as? DetailWeatherVC {
             controller.viewModel.weatherRealm.accept(selectedWeather)
+            controller.viewModel.setupData(weatherRealm: selectedWeather)
             rootController.navigationController?.pushViewController(controller, animated: true)
         }
     }

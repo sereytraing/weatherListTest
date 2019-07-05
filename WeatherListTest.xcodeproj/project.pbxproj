@@ -19,6 +19,7 @@
 		0F01AD2122CF8A9A00A1A2B6 /* NebulositeRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD2022CF8A9A00A1A2B6 /* NebulositeRealm.swift */; };
 		0F01AD2322CF8AFA00A1A2B6 /* WeatherRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD2222CF8AFA00A1A2B6 /* WeatherRealm.swift */; };
 		0F01AD2522CF8BC500A1A2B6 /* ServiceResponseRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD2422CF8BC500A1A2B6 /* ServiceResponseRealm.swift */; };
+		0F01AD2922CFD50200A1A2B6 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD2822CFD50200A1A2B6 /* Double.swift */; };
 		0F25764722CF322C00A48CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25764622CF322C00A48CE9 /* AppDelegate.swift */; };
 		0F25764E22CF322D00A48CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F25764D22CF322D00A48CE9 /* Assets.xcassets */; };
 		0F25765122CF322D00A48CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F25764F22CF322D00A48CE9 /* LaunchScreen.storyboard */; };
@@ -62,6 +63,7 @@
 		0F01AD2022CF8A9A00A1A2B6 /* NebulositeRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulositeRealm.swift; sourceTree = "<group>"; };
 		0F01AD2222CF8AFA00A1A2B6 /* WeatherRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRealm.swift; sourceTree = "<group>"; };
 		0F01AD2422CF8BC500A1A2B6 /* ServiceResponseRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponseRealm.swift; sourceTree = "<group>"; };
+		0F01AD2822CFD50200A1A2B6 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		0F25764322CF322C00A48CE9 /* WeatherListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F25764622CF322C00A48CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F25764D22CF322D00A48CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				0F01AD0C22CF79F600A1A2B6 /* UIAlertController.swift */,
+				0F01AD2822CFD50200A1A2B6 /* Double.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				0F346F5A22CF4A1900E9A035 /* Temperature.swift in Sources */,
 				0F346F5622CF42F000E9A035 /* NetworkManager.swift in Sources */,
 				0F01AD1D22CF89E200A1A2B6 /* RafaleWindRealm.swift in Sources */,
+				0F01AD2922CFD50200A1A2B6 /* Double.swift in Sources */,
 				0F01AD1722CF88CE00A1A2B6 /* PressionRealm.swift in Sources */,
 				0F346F5822CF49A100E9A035 /* Weather.swift in Sources */,
 				0F346F4222CF3ED200E9A035 /* BaseVC.swift in Sources */,

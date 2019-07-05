@@ -41,6 +41,10 @@ public final class HomeDomain {
                 return Observable.just(Array(weathers))
             }
         }
+        return self.forceGetWeatherRealm()
+    }
+    
+    func forceGetWeatherRealm() -> Observable<[WeatherRealm]> {
         return self.weatherRepository.getWeatherRealm().map({ serviceResponse -> [WeatherRealm] in
             if serviceResponse.weathers.isEmpty {
                 return []
