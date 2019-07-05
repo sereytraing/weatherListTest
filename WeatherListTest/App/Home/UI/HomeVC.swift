@@ -10,6 +10,8 @@ import UIKit
 
 class HomeVC: BaseVC {
 
+    private let viewModel = HomeViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

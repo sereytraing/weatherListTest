@@ -29,7 +29,7 @@ extension ServiceResponse: ImmutableMappable {
         self.message = try? map.value("message")
         self.modelRun = try? map.value("model_run")
         self.source = try? map.value("source")
-        
+      
         var isFinished = false
         var allWeathersTmp = [Weather]()
         var weatherTmp: Weather?
@@ -38,19 +38,24 @@ extension ServiceResponse: ImmutableMappable {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         let resultDate = formatter.string(from: date)
+        var nbDay = 0
         
         while !isFinished {
             for hour in hoursInterval {
-                weatherTmp = try? map.value("\(resultDate) \(hour)")
+                let tmp = "\(resultDate) \(hour)"
+                weatherTmp = try? map.value(tmp) as Weather
                 if weatherTmp != nil {
                     allWeathersTmp.append(weatherTmp!)
-                } else {
-                    isFinished = true
                 }
             }
             if let nextDay = Calendar.current.date(byAdding: .day, value: 1, to: date) {
                 date = nextDay
+                nbDay += 1
             } else {
+                isFinished = true
+            }
+            
+            if nbDay == 7 {
                 isFinished = true
             }
         }

@@ -16,7 +16,16 @@ public final class HomeDomain {
         self.weatherRepository = weatherRepository
     }
     
-    func getWeather() -> Observable<ServiceResponse> {
-        return self.weatherRepository.getWeather()
+    func getWeather() -> Observable<[Weather]> {
+        return self.weatherRepository.getWeather().map({ serviceResponse -> [Weather] in
+            if let weathers = serviceResponse.weathers {
+                if weathers.isEmpty {
+                    return []
+                } else {
+                    return weathers
+                }
+            }
+            return []
+        })
     }
 }

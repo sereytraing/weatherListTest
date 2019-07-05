@@ -37,13 +37,8 @@ class BaseNetwork<T: ImmutableMappable> {
     func getItem(_ path: String, parameters: [String: Any]?) -> Observable<(HTTPURLResponse, T)> {
         // Make your request with your custom manager that is caching your requests by default
         self.manager = NetworkManager.shared.manager
-        var absolutePath = "\(self.endPoint)/\(path)"
-        
-        if let encoded = absolutePath.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
-            let _ = URL(string: encoded) {
-            absolutePath = encoded
-        }
-        
+        let absolutePath = "\(self.endPoint)/\(path)"
+
         return self.manager.rx.request(.get, absolutePath, parameters: parameters, encoding: JSONEncoding.default, headers: self.headers)
             .responseJSON()
             .observeOn(self.scheduler)

@@ -9,7 +9,7 @@
 import ObjectMapper
 
 struct Temperature {
-    var twoM: Int?
+    var twoM: Double?
     var sol: Double?
     var fiveHundredhPa: Double?
     var eightFiftyhPa: Double?

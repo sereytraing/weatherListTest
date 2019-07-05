@@ -30,18 +30,18 @@ extension Weather: ImmutableMappable {
     
     // JSON -> Object
     init(map: Map) throws {
-        self.temperature = try? map.value("temperature")
-        self.pression = try? map.value("pression")
+        self.temperature = try? map.value("temperature") as Temperature
+        self.pression = try? map.value("pression") as Pression
         self.rain = try? map.value("pluie")
         self.convectiveRain = try? map.value("pluie_convective")
-        self.humidity = try? map.value("humidite")
-        self.averageWind = try? map.value("vent_moyen")
-        self.rafaleWind = try? map.value("vent_rafales")
-        self.windDirection = try? map.value("vent_direction")
+        self.humidity = try? map.value("humidite") as Humidity
+        self.averageWind = try? map.value("vent_moyen") as AverageWind
+        self.rafaleWind = try? map.value("vent_rafales") as RafaleWind
+        self.windDirection = try? map.value("vent_direction") as WindDirection
         self.isoZero = try? map.value("iso_zero")
         self.snowRisk = try? map.value("risque_neige")
         self.cape = try? map.value("cape")
-        self.nebulosite = try? map.value("nebulosite")
+        self.nebulosite = try? map.value("nebulosite") as Nebulosite
     }
     
     // Object -> JSON
