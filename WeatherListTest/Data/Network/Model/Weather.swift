@@ -22,6 +22,9 @@ struct Weather {
     var cape: Int?
     var nebulosite: Nebulosite?
     
+    var date: String?
+    var hour: String?
+    
     init() {
     }
 }

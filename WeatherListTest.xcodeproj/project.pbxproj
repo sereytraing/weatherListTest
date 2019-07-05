@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F01AD0822CF76A700A1A2B6 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD0722CF76A700A1A2B6 /* WeatherCell.swift */; };
+		0F01AD0A22CF76B100A1A2B6 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F01AD0922CF76B100A1A2B6 /* WeatherCell.xib */; };
+		0F01AD0D22CF79F600A1A2B6 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD0C22CF79F600A1A2B6 /* UIAlertController.swift */; };
 		0F25764722CF322C00A48CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25764622CF322C00A48CE9 /* AppDelegate.swift */; };
 		0F25764E22CF322D00A48CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F25764D22CF322D00A48CE9 /* Assets.xcassets */; };
 		0F25765122CF322D00A48CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F25764F22CF322D00A48CE9 /* LaunchScreen.storyboard */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F01AD0722CF76A700A1A2B6 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		0F01AD0922CF76B100A1A2B6 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
+		0F01AD0C22CF79F600A1A2B6 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		0F25764322CF322C00A48CE9 /* WeatherListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F25764622CF322C00A48CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F25764D22CF322D00A48CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +97,14 @@
 				6783AD183624984CCABEC98D /* Pods-WeatherListTest.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		0F01AD0B22CF79E300A1A2B6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0F01AD0C22CF79F600A1A2B6 /* UIAlertController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		0F25763A22CF322C00A48CE9 = {
@@ -234,6 +248,8 @@
 			children = (
 				0F346F4322CF3EE000E9A035 /* HomeVC.swift */,
 				0F346F4D22CF3F4300E9A035 /* Home.storyboard */,
+				0F01AD0722CF76A700A1A2B6 /* WeatherCell.swift */,
+				0F01AD0922CF76B100A1A2B6 /* WeatherCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -258,6 +274,7 @@
 		0F346F4022CF3EC000E9A035 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0F01AD0B22CF79E300A1A2B6 /* Extension */,
 				0F346F4122CF3ED200E9A035 /* BaseVC.swift */,
 				0F346F4B22CF3F3100E9A035 /* BaseViewModel.swift */,
 				0F346F5122CF40DE00E9A035 /* Navigator.swift */,
@@ -338,6 +355,7 @@
 				0F25764E22CF322D00A48CE9 /* Assets.xcassets in Resources */,
 				0F346F4E22CF3F4300E9A035 /* Home.storyboard in Resources */,
 				0F346F5022CF3F5600E9A035 /* DetailWeather.storyboard in Resources */,
+				0F01AD0A22CF76B100A1A2B6 /* WeatherCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +435,7 @@
 				0F346F5822CF49A100E9A035 /* Weather.swift in Sources */,
 				0F346F4222CF3ED200E9A035 /* BaseVC.swift in Sources */,
 				0F346F5C22CF4AFC00E9A035 /* Pression.swift in Sources */,
+				0F01AD0D22CF79F600A1A2B6 /* UIAlertController.swift in Sources */,
 				0F346F5422CF429000E9A035 /* BaseNetwork.swift in Sources */,
 				0F346F6222CF4C7F00E9A035 /* RafaleWind.swift in Sources */,
 				0F346F6822CF4F9200E9A035 /* ServiceResponse.swift in Sources */,
@@ -427,6 +446,7 @@
 				0F346F4A22CF3F1F00E9A035 /* DetailWeatherViewModel.swift in Sources */,
 				0F346F5E22CF4B9800E9A035 /* Humidity.swift in Sources */,
 				0F25764722CF322C00A48CE9 /* AppDelegate.swift in Sources */,
+				0F01AD0822CF76A700A1A2B6 /* WeatherCell.swift in Sources */,
 				0F346F6022CF4C2200E9A035 /* AverageWind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

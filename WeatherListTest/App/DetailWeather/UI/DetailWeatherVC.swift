@@ -10,8 +10,10 @@ import UIKit
 
 class DetailWeatherVC: BaseVC {
 
+    let viewModel = DetailWeatherViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = self.viewModel.weather.value.date
     }
 }

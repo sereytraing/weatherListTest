@@ -10,5 +10,5 @@ import RxSwift
 import RxCocoa
 
 class DetailWeatherViewModel: BaseViewModel {
-    
+    var weather                = BehaviorRelay<Weather>(value: Weather())
 }

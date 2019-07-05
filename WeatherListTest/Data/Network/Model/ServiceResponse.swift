@@ -37,19 +37,22 @@ extension ServiceResponse: ImmutableMappable {
         let hoursInterval = ["02:00:00", "05:00:00", "08:00:00", "11:00:00", "14:00:00", "17:00:00", "20:00:00", "23:00:00"]
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
-        let resultDate = formatter.string(from: date)
+        var resultDate = formatter.string(from: date)
         var nbDay = 0
         
         while !isFinished {
             for hour in hoursInterval {
                 let tmp = "\(resultDate) \(hour)"
                 weatherTmp = try? map.value(tmp) as Weather
+                weatherTmp?.date = resultDate
+                weatherTmp?.hour = hour
                 if weatherTmp != nil {
                     allWeathersTmp.append(weatherTmp!)
                 }
             }
             if let nextDay = Calendar.current.date(byAdding: .day, value: 1, to: date) {
                 date = nextDay
+                resultDate = formatter.string(from: date)
                 nbDay += 1
             } else {
                 isFinished = true
