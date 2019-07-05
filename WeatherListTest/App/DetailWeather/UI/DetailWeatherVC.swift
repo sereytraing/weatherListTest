@@ -14,6 +14,6 @@ class DetailWeatherVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = self.viewModel.weather.value.date
+        self.title = self.viewModel.weatherRealm.value.date
     }
 }

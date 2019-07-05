@@ -10,6 +10,15 @@
 		0F01AD0822CF76A700A1A2B6 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD0722CF76A700A1A2B6 /* WeatherCell.swift */; };
 		0F01AD0A22CF76B100A1A2B6 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F01AD0922CF76B100A1A2B6 /* WeatherCell.xib */; };
 		0F01AD0D22CF79F600A1A2B6 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD0C22CF79F600A1A2B6 /* UIAlertController.swift */; };
+		0F01AD1522CF87DD00A1A2B6 /* TemperatureRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD1422CF87DD00A1A2B6 /* TemperatureRealm.swift */; };
+		0F01AD1722CF88CE00A1A2B6 /* PressionRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD1622CF88CE00A1A2B6 /* PressionRealm.swift */; };
+		0F01AD1922CF896500A1A2B6 /* HumidityRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD1822CF896500A1A2B6 /* HumidityRealm.swift */; };
+		0F01AD1B22CF89AD00A1A2B6 /* AverageWindRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD1A22CF89AD00A1A2B6 /* AverageWindRealm.swift */; };
+		0F01AD1D22CF89E200A1A2B6 /* RafaleWindRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD1C22CF89E200A1A2B6 /* RafaleWindRealm.swift */; };
+		0F01AD1F22CF8A2700A1A2B6 /* WindDirectionRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD1E22CF8A2700A1A2B6 /* WindDirectionRealm.swift */; };
+		0F01AD2122CF8A9A00A1A2B6 /* NebulositeRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD2022CF8A9A00A1A2B6 /* NebulositeRealm.swift */; };
+		0F01AD2322CF8AFA00A1A2B6 /* WeatherRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD2222CF8AFA00A1A2B6 /* WeatherRealm.swift */; };
+		0F01AD2522CF8BC500A1A2B6 /* ServiceResponseRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F01AD2422CF8BC500A1A2B6 /* ServiceResponseRealm.swift */; };
 		0F25764722CF322C00A48CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25764622CF322C00A48CE9 /* AppDelegate.swift */; };
 		0F25764E22CF322D00A48CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F25764D22CF322D00A48CE9 /* Assets.xcassets */; };
 		0F25765122CF322D00A48CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F25764F22CF322D00A48CE9 /* LaunchScreen.storyboard */; };
@@ -44,6 +53,15 @@
 		0F01AD0722CF76A700A1A2B6 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		0F01AD0922CF76B100A1A2B6 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
 		0F01AD0C22CF79F600A1A2B6 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		0F01AD1422CF87DD00A1A2B6 /* TemperatureRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureRealm.swift; sourceTree = "<group>"; };
+		0F01AD1622CF88CE00A1A2B6 /* PressionRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressionRealm.swift; sourceTree = "<group>"; };
+		0F01AD1822CF896500A1A2B6 /* HumidityRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityRealm.swift; sourceTree = "<group>"; };
+		0F01AD1A22CF89AD00A1A2B6 /* AverageWindRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageWindRealm.swift; sourceTree = "<group>"; };
+		0F01AD1C22CF89E200A1A2B6 /* RafaleWindRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RafaleWindRealm.swift; sourceTree = "<group>"; };
+		0F01AD1E22CF8A2700A1A2B6 /* WindDirectionRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDirectionRealm.swift; sourceTree = "<group>"; };
+		0F01AD2022CF8A9A00A1A2B6 /* NebulositeRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulositeRealm.swift; sourceTree = "<group>"; };
+		0F01AD2222CF8AFA00A1A2B6 /* WeatherRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRealm.swift; sourceTree = "<group>"; };
+		0F01AD2422CF8BC500A1A2B6 /* ServiceResponseRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponseRealm.swift; sourceTree = "<group>"; };
 		0F25764322CF322C00A48CE9 /* WeatherListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F25764622CF322C00A48CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F25764D22CF322D00A48CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +125,30 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		0F01AD1222CF87B900A1A2B6 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				0F01AD1322CF87BF00A1A2B6 /* Model */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		0F01AD1322CF87BF00A1A2B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F01AD1422CF87DD00A1A2B6 /* TemperatureRealm.swift */,
+				0F01AD1622CF88CE00A1A2B6 /* PressionRealm.swift */,
+				0F01AD1822CF896500A1A2B6 /* HumidityRealm.swift */,
+				0F01AD1A22CF89AD00A1A2B6 /* AverageWindRealm.swift */,
+				0F01AD1C22CF89E200A1A2B6 /* RafaleWindRealm.swift */,
+				0F01AD1E22CF8A2700A1A2B6 /* WindDirectionRealm.swift */,
+				0F01AD2022CF8A9A00A1A2B6 /* NebulositeRealm.swift */,
+				0F01AD2222CF8AFA00A1A2B6 /* WeatherRealm.swift */,
+				0F01AD2422CF8BC500A1A2B6 /* ServiceResponseRealm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0F25763A22CF322C00A48CE9 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +201,7 @@
 		0F346F3422CF3D7B00E9A035 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0F01AD1222CF87B900A1A2B6 /* Database */,
 				0F346F3522CF3DBC00E9A035 /* Network */,
 				0F346F3822CF3DD400E9A035 /* Repositories */,
 				0F346F3922CF3DDF00E9A035 /* Domain */,
@@ -374,6 +417,8 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -385,6 +430,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -423,18 +470,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F01AD1922CF896500A1A2B6 /* HumidityRealm.swift in Sources */,
 				0F346F6E22CF5A4C00E9A035 /* HomeDomain.swift in Sources */,
 				0F346F6C22CF59ED00E9A035 /* WeatherRepository.swift in Sources */,
 				0F346F4422CF3EE000E9A035 /* HomeVC.swift in Sources */,
+				0F01AD2522CF8BC500A1A2B6 /* ServiceResponseRealm.swift in Sources */,
 				0F346F6622CF4CD900E9A035 /* Nebulosite.swift in Sources */,
 				0F346F7022CF5C2900E9A035 /* DependencyManager.swift in Sources */,
+				0F01AD1F22CF8A2700A1A2B6 /* WindDirectionRealm.swift in Sources */,
 				0F346F6422CF4CA500E9A035 /* WindDirection.swift in Sources */,
 				0F346F4822CF3F0B00E9A035 /* DetailWeatherVC.swift in Sources */,
 				0F346F5A22CF4A1900E9A035 /* Temperature.swift in Sources */,
 				0F346F5622CF42F000E9A035 /* NetworkManager.swift in Sources */,
+				0F01AD1D22CF89E200A1A2B6 /* RafaleWindRealm.swift in Sources */,
+				0F01AD1722CF88CE00A1A2B6 /* PressionRealm.swift in Sources */,
 				0F346F5822CF49A100E9A035 /* Weather.swift in Sources */,
 				0F346F4222CF3ED200E9A035 /* BaseVC.swift in Sources */,
 				0F346F5C22CF4AFC00E9A035 /* Pression.swift in Sources */,
+				0F01AD2322CF8AFA00A1A2B6 /* WeatherRealm.swift in Sources */,
 				0F01AD0D22CF79F600A1A2B6 /* UIAlertController.swift in Sources */,
 				0F346F5422CF429000E9A035 /* BaseNetwork.swift in Sources */,
 				0F346F6222CF4C7F00E9A035 /* RafaleWind.swift in Sources */,
@@ -443,8 +496,11 @@
 				0F346F6A22CF581700E9A035 /* WeatherNetwork.swift in Sources */,
 				0F346F4C22CF3F3100E9A035 /* BaseViewModel.swift in Sources */,
 				0F346F5222CF40DE00E9A035 /* Navigator.swift in Sources */,
+				0F01AD1B22CF89AD00A1A2B6 /* AverageWindRealm.swift in Sources */,
 				0F346F4A22CF3F1F00E9A035 /* DetailWeatherViewModel.swift in Sources */,
 				0F346F5E22CF4B9800E9A035 /* Humidity.swift in Sources */,
+				0F01AD2122CF8A9A00A1A2B6 /* NebulositeRealm.swift in Sources */,
+				0F01AD1522CF87DD00A1A2B6 /* TemperatureRealm.swift in Sources */,
 				0F25764722CF322C00A48CE9 /* AppDelegate.swift in Sources */,
 				0F01AD0822CF76A700A1A2B6 /* WeatherCell.swift in Sources */,
 				0F346F6022CF4C2200E9A035 /* AverageWind.swift in Sources */,

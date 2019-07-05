@@ -11,5 +11,6 @@ target 'WeatherListTest' do
   pod 'RxAlamofire', '4.3.0'
   pod 'ObjectMapper', '3.4.1'
   pod 'AlamofireObjectMapper', '5.2.0'
+  pod 'RealmSwift'
 
 end

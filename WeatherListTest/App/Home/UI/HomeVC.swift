@@ -26,14 +26,22 @@ class HomeVC: BaseVC {
             .setDelegate(self)
             .disposed(by: self.viewModel.disposeBag)
         
-        self.viewModel.weathers.asObservable().bind(to: self.tableView.rx.items(cellIdentifier: "WeatherCell")) { row, model, cell in
+        self.viewModel.weathersRealm.asObservable().bind(to: self.tableView.rx.items(cellIdentifier: "WeatherCell")) { row, model, cell in
                 if let weatherCell = cell as? WeatherCell {
                     weatherCell.setupData(weather: model)
                 }
             }
             .disposed(by: self.viewModel.disposeBag)
         
-        self.tableView.rx.modelSelected(Weather.self)
+        //Cache URL
+        /*self.tableView.rx.modelSelected(Weather.self)
+            .map({ [unowned self] weather in
+                Navigator.navigateToDetailWeather(rootController: self, selectedWeather: weather)
+            })
+            .subscribe()
+            .disposed(by: self.viewModel.disposeBag)*/
+        
+        self.tableView.rx.modelSelected(WeatherRealm.self)
             .map({ [unowned self] weather in
                 Navigator.navigateToDetailWeather(rootController: self, selectedWeather: weather)
             })

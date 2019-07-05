@@ -21,6 +21,11 @@ class WeatherCell: UITableViewCell {
         self.temperatureLabel.text = "\(self.convertKelvinToCelsius(value: weather.temperature?.twoM))°C"
     }
     
+    func setupData(weather: WeatherRealm) {
+        self.dateLabel.text = weather.date + " " + weather.hour
+        self.temperatureLabel.text = "\(self.convertKelvinToCelsius(value: weather.temperature?.twoM))°C"
+    }
+    
     func convertKelvinToCelsius(value: Double?) -> Int {
         if let value = value {
             return Int(value - 273.15)
